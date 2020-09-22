@@ -1,0 +1,106 @@
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:active {
+  background-color: red;
+}
+a:hover{
+background-color:black;
+font-size:115%;
+}
+</style>
+<a href = "menu.html">
+<img src="gen/home.jpg" height=40 width=50> HOME
+</a>
+<a href = "nwabout.html">
+<img src="gen/aboutus.jpg" height=40 width=55> ABOUT US</a>
+<a href = "contact.html">
+<img src="gen/contact.jpg" height=40 width=50> CONTACT US</a>
+<a href = "showrooms.html">
+<img src="gen/showroom.jpg" height=40 width=60> LIST OF SHOWROOMS</a>
+<a href = "service_center.html">
+<img src="gen/service.jpg" height=40 width=60> SERVICE CENTERS</a>
+<a href = "feedback.php">
+<img src="gen/feedback.jpg" height=40 width=60> FEEDBACK</a>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1> ABOUT THE OWNERS </h1>
+<!DOCTYPE html>
+<meta name="viewport" initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 45%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 50%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 16px 35px;
+}
+</style>
+</head>
+<body>
+
+<!--<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>-->
+
+</div>
+ <div class="container">
+  <img src="gen/img_avatar.png" alt="Avatar" class="image" style="width:55%">
+  <div class="middle">
+    <div class="text">Ayushi</div>
+  </div><br>
+</div>
+<div class="container">
+  <img src="gen/appu.jpg" alt="Avatar" class="image" style="width:55%">
+  <div class="middle">
+    <div class="text">Aparna</div>
+  </div>
+ </div><br>
+<div class="container">
+  <img src="gen/img_avatar.png" alt="Avatar" class="image" style="width:55%">
+  <div class="middle">
+    <div class="text">Harshitha</div>
+  </div>
+</div>
+
+</body>
+</html>
+

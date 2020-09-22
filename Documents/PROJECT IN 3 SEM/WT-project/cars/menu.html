@@ -1,0 +1,166 @@
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:active {
+  background-color: red;
+}
+a:hover{
+background-color:black;
+font-size:115%;
+}
+</style><center>
+<a href = "menu.html">
+<img src="gen/home.jpg" height=40 width=50> HOME </a>
+<a href = "nwabout.html">
+<img src="gen/aboutus.jpg" height=40 width=55> ABOUT US</a>
+<a href = "contact.html">
+<img src="gen/contact.jpg" height=40 width=50> CONTACT US</a>
+<a href = "showrooms.html">
+<img src="gen/showroom.jpg" height=40 width=60> LIST OF SHOWROOMS</a>
+<a href = "service_center.html">
+<img src="gen/service.jpg" height=40 width=60> SERVICE CENTERS</a>
+<a href = "feedback.html">
+<img src="gen/feedback.jpg" height=40 width=60> FEEDBACK</a>
+</center>
+<body>
+<p align="center">Find the cars special for you. <br> With millions of cars we 
+have just the right one for you!!<br> </p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>//For Slider
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="car-images/Luxury-Cars/ferrari-portofino.jpg" style="width:70%" height="60%" >
+  <div class="text">Ferrari Portofino</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="car-images/Luxury-Cars/porshe.jpg" style="width:70%" height="60%" >
+  <div class="text">Porsche</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="car-images/Luxury-Cars/rolls-royce-ghost.jpg" style="width:70%" height="60%" >
+  <div class="text">Rolls Royce Ghost</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p >So what you are waiting. Let's get started with Explore now!</p>
+<a href="Car_list.html" >EXPLORE NOW</a>
+</center>
+</body>
+</html>

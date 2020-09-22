@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="register.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <form method="POST" action ="register.php" >
+            <div class="row">
+                   
+                        <h1>SIGN UP</h1>
+                        <label for="first"><b>&nbsp;First Name</b></label>
+                        <input type="text" name="first" id="fn" required><br><br>
+            
+                        <label for="last"><b>&nbsp;Last Name</b></label>
+                        <input type="text" name="last" id="ln" required><br><br>
+            
+                        <label for="email"><b>&nbsp;&nbsp;&nbsp;&nbsp;Email - ID</b></label>
+                        <input type="email" name="email"id="em" required><br><br>
+            
+                        <label for="username"><b>&nbsp;&nbsp;Username</b></label>
+                        <input type="text" name="username" maxlength="8" id="un" required><br><br>
+            
+                        <label for="password"><b>&nbsp;&nbsp;&nbsp;Password</b></label>
+                        <input type="password" name="password" id="ps" minlength="6" maxlength="12" required><br><br><br>
+            
+                        <button name="create" value="Sign Up" id="btn" onclick="menu.html">Sign Up</button></form></div>
+					 <!--div class="row">	<button name="createe" value="Login" id="btn" onclick="login.html">Login</button>
+            </div-->
+			 <div class="container signin"><p><font size='4'>Already have an account? <a href="login.html">Sign in</font></a>.</p></div>
+                    
+        <!--/form>
+                <!-- <script>
+                    btn.addEventListener('click',required,true); 
+                        function required(e)
+                        {   var valid= this.form.checkValidity();
+                            if(valid){
+                                alert("");
+                            }
+                            else{
+                                alert("Fill up all the details properly.");
+                            }
+                        }
+                </script> -->
+    </body>
+</html>
